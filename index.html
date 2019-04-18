@@ -21,11 +21,13 @@
 <div id="map"></div>
 <script>
 	var map;
-	var parks = [
-		{"park":"Yellowstone","coords":[44.4280,-110.5885]},
-		{"park":"Glacier","coords":[48.7596, -113.7870]},
-        {"park":"Lamoreaux","coords":[43.811849,-79.307131]},
-        {"park":"Bannerghatta","coords":[12.779289,77.573298]},
+	var aboutMe = [
+		{"park":"New Home","coords":[43.819138,-79.306755]},		
+        {"park":"Jogging Park","coords":[43.811849,-79.307131]},
+        {"park":"Last vacation","coords":[12.779289,77.573298]},
+		{"park":"Home Town","coords":[9.876056,76.487504]},
+		{"park":"Upcoming Trip","coords":[-33.236893,150.473962]},
+		{"park":"My College","coords":[43.773885,-79.335396]}
 		];
 
 	function initMap() {
@@ -35,7 +37,7 @@
 			mapTypeId: 'terrain'
 		});
 
-		mashParks(parks);
+		mashParks(aboutMe);
 	}
 
 	function mashParks(results) {
